@@ -15,7 +15,7 @@ export class GetweatherProvider {
     console.log('Hello GetweatherProvider Provider');
    
   }
-  getweather():Observable<any>{
+ /* getweather():Observable<any>{
     return this.http.get('https://api.darksky.net/forecast/9b9f3a14233a3147d295bd07a34b895f/53.1424,-7.6921');
-  }
+  }*/
 }
