@@ -21,8 +21,9 @@ export class WeatherPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WeatherPage');
-    this.GetWeatherProvider.getweather().subscribe(weather =>{
-      this.weather = weather;
+    this.GetWeatherProvider.getweather().subscribe(data =>{
+      this.weather = data;
+      console.log(this.weather);
     })
   }
 

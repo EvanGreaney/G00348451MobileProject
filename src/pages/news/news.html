@@ -11,9 +11,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-item *ngFor="let article of articles">
+  <!--<ion-item *ngFor="let article of News">
     <h2>{{article.title}}</h2>
     <p>{{article.description}}</p>
-    <h2>The Page works</h2>
-  </ion-item>
+  </ion-item>-->
+
+  <ion-card *ngFor="let article of News">
+    <img  width="200" height="200"src = "{{article.urlToImage}}"/>
+    <ion-card-content>
+    <ion-card-header>
+      {{article.title}}
+    </ion-card-header>
+    <p>{{article.description}}</p>
+  </ion-card-content>
+  </ion-card>
 </ion-content>
