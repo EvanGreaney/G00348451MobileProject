@@ -16,10 +16,12 @@ import { GetNewsProvider } from '../../providers/get-news/get-news';
 })
 export class NewsPage {
    News: any[]=[]
+   // added a GetNews parameter to get the information from the Provider
   constructor(public navCtrl: NavController, public navParams: NavParams,private Ns:GetNewsProvider) {
   }
 
   ionViewDidLoad() {
+    //calls the getNews method from the Get News Provider that then subcribes to the API call
    this.Ns.getNews().subscribe(data =>{
      this.News = data.articles;
    })
