@@ -6,14 +6,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+
 import { GetNewsProvider } from '../providers/get-news/get-news';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { GetweatherProvider } from '../providers/getweather/getweather';
 
 
 @NgModule({
   declarations: [
     MyApp,
+    
     HomePage
   ],
   imports: [
@@ -31,7 +34,8 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    GetNewsProvider
+    GetNewsProvider,
+    GetweatherProvider
   ]
 })
 export class AppModule {}

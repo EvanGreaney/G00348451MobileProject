@@ -15,4 +15,8 @@ export class HomePage {
     this.navCtrl.push('NewsPage');
   }
 
+  searchWeather(){
+    this.navCtrl.push('WeatherPage');
+  }
+
 }
