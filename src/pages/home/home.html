@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+     News 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+     News & Weather
+    </ion-card-header>
+    <button ion-item (click)="searchNews()">
+      <ion-icon name="globe" item-start></ion-icon>
+      Daily Top Stories
+    </button>
+    <button ion-item>
+      <ion-icon name="cloudy" item-start></ion-icon>
+      Current Weather
+    </button>
+  </ion-card>
 </ion-content>
